@@ -1,1 +1,53 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(r(){q o=$(\'<3 4="d 5-d-C P">\\n\'+\'        <3 4="d-G 0-9 H-R">\\n\'+\'            <3 4="k-b">\\n\'+\'                <3 4="0-c 0-i-b">\\n\'+\'                    <3>\\n\'+\'                        <c u="" w="">\\n\'+\'                        <3 4="0-6-m-l"></3>\\n\'+\'                    </3>\\n\'+\'                </3>\\n\'+\'                <3 4="0-7 0-i-b">\\n\'+\'                    <3 4="0-7-f">\\n\'+\'                        <3 4="0-h"></3>\\n\'+\'                        <3 4="0-j"></3>\\n\'+\'                    </3>\\n\'+\'                    <3 4="0-7-e"></3>\\n\'+\'                </3>\\n\'+\'            </3>\\n\'+\'\\n\'+\'            <3 4="k-b">\\n\'+\'                <3 4="0-6 0-i-b">\\n\'+\'                 <3 4="6-O">\'+\'                    <3 4="0-6-j">出品主题</3>\\n\'+\'                    <3 4="0-6-g"></3>\\n\'+\'                 </3>\'+\'                </3>\\n\'+\'                <3 4="0-6-7 k-M d-K">\\n\'+\'                 <3 4="0-7-J">\'+\'                    <p 4="0-6-g-7"></p>\\n\'+\'                 </3>\'+\'                </3>\\n\'+\'            </3>\\n\'+\'        </3>\\n\'+\'\\n\'+\'    </3>\');E.D(r(5,s){q 8=o.z();y(s%2===1){$(\'.0-9 .0-6\',8).t({\'L-I\':\'x\'});$(\'.0-6-m-l\',8).t({\'A-Q\':\'N F x\'})}$(\'.0-9 .0-c c\',8).v(\'u\',5[\'5-c\']).v(\'w\',5[\'5-h\']);$(\'.0-9 .0-7 .0-7-f .0-h\',8).a(5[\'5-h\']);$(\'.0-9 .0-7 .0-7-f .0-j\',8).a(5[\'5-f\']);$(\'.0-7 .0-7-e\',8).a(5[\'5-e\']);$(\'.0-9 .0-6 .0-6-g\',8).a(5[\'5-6\']);$(\'.0-9 .0-6-7 .0-6-g-7\',8).a(5[\'6-e\']);$(\'#5-B\').a(8)})});',54,54,'speaker|||div|class|producer|topic|detail|producerWrapper|info|append|row|img|grid|information|introduction|content|name|intro|title|flexbox|icon|import||templateHTMl||var|function|index|css|src|attr|alt|red|if|clone|border|list|space|forEach|producers|solid|cell|text|color|wrapper|grey|background|item|10px|abstract|centered|bottom|left'.split('|'),0,{}))
+$(function () {
+  var templateHTMl = $('<div class="grid producer-grid-space centered">\n' +
+    '        <div class="grid-cell speaker-info text-left">\n' +
+    '            <div class="flexbox-row">\n' +
+    '                <div class="speaker-img speaker-intro-row">\n' +
+    '                    <div>\n' +
+    '                        <img src="" alt="">\n' +
+    '                        <div class="speaker-topic-import-icon"></div>\n' +
+    '                    </div>\n' +
+    '                </div>\n' +
+    '                <div class="speaker-detail speaker-intro-row">\n' +
+    '                    <div class="speaker-detail-introduction">\n' +
+    '                        <div class="speaker-name"></div>\n' +
+    '                        <div class="speaker-title"></div>\n' +
+    '                    </div>\n' +
+    '                    <div class="speaker-detail-information"></div>\n' +
+    '                </div>\n' +
+    '            </div>\n' +
+    '\n' +
+    '            <div class="flexbox-row">\n' +
+    '                <div class="speaker-topic speaker-intro-row">\n' +
+    '                 <div class="topic-abstract">' +
+    '                    <div class="speaker-topic-title">出品主题</div>\n' +
+    '                    <div class="speaker-topic-content"></div>\n' +
+    '                 </div>' +
+    '                </div>\n' +
+    '                <div class="speaker-topic-detail flexbox-item grid-grey">\n' +
+    '                 <div class="speaker-detail-wrapper">' +
+    '                    <p class="speaker-topic-content-detail"></p>\n' +
+    '                 </div>' +
+    '                </div>\n' +
+    '            </div>\n' +
+    '        </div>\n' +
+    '\n' +
+    '    </div>');
+
+
+  producers.forEach(function(producer, index) {
+    var producerWrapper = templateHTMl.clone();
+    if( index % 2 === 1) {
+      $('.speaker-info .speaker-topic', producerWrapper).css({'background-color': 'red'});
+      $('.speaker-topic-import-icon', producerWrapper).css({'border-bottom': '10px solid red'});
+    }
+    $('.speaker-info .speaker-img img', producerWrapper).attr('src', producer['producer-img']).attr('alt', producer['producer-name']);
+    $('.speaker-info .speaker-detail .speaker-detail-introduction .speaker-name', producerWrapper).append(producer['producer-name']);
+    $('.speaker-info .speaker-detail .speaker-detail-introduction .speaker-title', producerWrapper).append(producer['producer-introduction']);
+    $('.speaker-detail .speaker-detail-information', producerWrapper).append(producer['producer-information']);
+
+    $('.speaker-info .speaker-topic .speaker-topic-content', producerWrapper).append(producer['producer-topic']);
+    $('.speaker-info .speaker-topic-detail .speaker-topic-content-detail', producerWrapper).append(producer['topic-information']);
+    $('#producer-list').append(producerWrapper);
+  })
+});

@@ -1,1 +1,14 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--)d[c.toString(a)]=k[c]||c.toString(a);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(j(){i 5=m(l.s.r.q(\'=\')[1])-1 p.o(6[5]);$(\'.4-8-1 .3-9 .3-g g\').h(\'n\',6[5][0][\'b-g\']).h(\'k\',6[5][0][\'b-f\']);$(\'.4-8-1 .3-9 .3-7 .3-7-e .3-f\').a(6[5][0][\'b-f\']);$(\'.4-8-1 .3-9 .3-7 .3-7-e .3-t\').a(6[5][0][\'b-e\']);$(\'.4-8-1 .3-7 .3-7-d\').a(6[5][0][\'b-d\']);$(\'.4-8-1 .3-9 .3-4 .3-4-c\').a(6[5][0][\'b-4\']);$(\'.4-8-1 .3-9 .3-4-7 .3-4-c-7\').a(6[5][0][\'4-d\']);$(\'.4-8-2 .3-9 .3-4 .3-4-c\').a(6[5][1][\'b-4\']);$(\'.4-8-2 .3-9 .3-4-7 .3-4-c-7\').a(6[5][1][\'4-d\'])});',30,30,'|||speaker|topic|id|speakers|detail|item|info|append|producer|content|information|introduction|name|img|attr|var|function|alt|window|Number|src|log|console|split|search|location|title'.split('|'),0,{}))
+$(function () {
+  var id = Number(window.location.search.split('=')[1]) - 1
+  console.log(speakers[id]);
+  $('.topic-item-1 .speaker-info .speaker-img img').attr('src', speakers[id][0]['producer-img']).attr('alt', speakers[id][0]['producer-name']);
+  $('.topic-item-1 .speaker-info .speaker-detail .speaker-detail-introduction .speaker-name').append(speakers[id][0]['producer-name']);
+  $('.topic-item-1 .speaker-info .speaker-detail .speaker-detail-introduction .speaker-title').append(speakers[id][0]['producer-introduction']);
+  $('.topic-item-1 .speaker-detail .speaker-detail-information').append(speakers[id][0]['producer-information']);
+
+  $('.topic-item-1 .speaker-info .speaker-topic .speaker-topic-content').append(speakers[id][0]['producer-topic']);
+  $('.topic-item-1 .speaker-info .speaker-topic-detail .speaker-topic-content-detail').append(speakers[id][0]['topic-information']);
+
+  $('.topic-item-2 .speaker-info .speaker-topic .speaker-topic-content').append(speakers[id][1]['producer-topic']);
+  $('.topic-item-2 .speaker-info .speaker-topic-detail .speaker-topic-content-detail').append(speakers[id][1]['topic-information']);
+});
