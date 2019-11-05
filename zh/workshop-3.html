@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>领域驱动设计峰会DDD-China</title>
@@ -7,241 +8,277 @@
     <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
     <link rel="icon" href="../resource/favicon.ico">
 </head>
+
 <body>
 
-<div class="grid-wrapper">
-    <div class="grid">
-        <div class="grid-cell">
-            <div class="header_wrapper navbar">
-                <a class="header_logo" href="index.html">
-                    <div class="img"></div>
-                </a>
-                <div class="header_tabs">
-                    <ul class="menu-items">
-                        <li class="menu-item"><a href="index.html">2019 Conference</a></li>
-                        <li class="menu-item"><a href="./speaker-info.html">讲师介绍</a></li>
-                        <li class="menu-item"><a href="./workshop.html">工作坊</a></li>
-                        <li class="menu-item"><a href="./topic-gathering.html">提案征集</a></li>
-                        <li class="menu-item menu-item-wrap">
-                            <a>往届盛况回顾</a>
-                            <ul class="menu-child">
-                                <li class="menu-child-item"><a href="./look-back-2017.html">2017峰会盛况回顾</a></li>
-                                <li class="menu-child-item"><a href="./look-back-2018.html">2018峰会盛况回顾</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="./about-thoughtworks.html">主办方介绍</a></li>
-                        <li class="menu-item"><a>中/EN</a></li>
-                    </ul>
-                </div>
-                <div class="color-gray" id="booking-ticket">
-                    <a class="color-text-white" href="booking-tickets.html" target="_blank">
-                        <span><img src="../resource/ticket_icon.png" alt="ticket"></span>购买门票</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="fixed-subscribe">
-    <div id="fixed-subscribe-button">
-        <img src="../resource/icon/subscribe.png" alt="subscribe">
-        <span>订 阅</span>
-    </div>
-
-    <div id="fixed-subscribe-window">
-        <div class="over-layer"></div>
-        <div class="subscribe-form">
-            <iframe id="goldendata_form_hvS3ze"
-                src="https://jinshuju.net/f/hvS3ze?background=white&banner=show&embedded=true" width="320" frameborder=0
-                allowTransparency="true" height="665"></iframe>
-            <div class="close-button">
-                <img src="../resource/icon/close.png" alt="close">
-            </div>
-        </div>
-    </div>
-    <link rel="stylesheet" href="../css/fixed-subscribe.css">
-    <script src="../js/fixed-subscribe.js"></script>
-</div>
-
-<div class="main-container workshop-3">
     <div class="grid-wrapper">
-        <div class="hero-banner">
-            <a href="./booking-tickets.html">
-                <img src="../resource/workshop-3/workshop-3-banner.jpg" alt="Topic pic">
-            </a>
+        <div class="grid">
+            <div class="grid-cell">
+                <div class="header_wrapper navbar">
+                    <a class="header_logo" href="index.html">
+                        <div class="img"></div>
+                    </a>
+                    <div class="header_tabs">
+                        <ul class="menu-items">
+                            <li class="menu-item"><a href="index.html">2019 Conference</a></li>
+                            <li class="menu-item"><a href="./speaker-info.html">讲师介绍</a></li>
+                            <li class="menu-item"><a href="./workshop.html">工作坊</a></li>
+                            <li class="menu-item"><a href="./topic-gathering.html">提案征集</a></li>
+                            <li class="menu-item menu-item-wrap">
+                                <a>往届盛况回顾</a>
+                                <ul class="menu-child">
+                                    <li class="menu-child-item"><a href="./look-back-2017.html">2017峰会盛况回顾</a></li>
+                                    <li class="menu-child-item"><a href="./look-back-2018.html">2018峰会盛况回顾</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="./about-thoughtworks.html">主办方介绍</a></li>
+                            <li class="menu-item"><a>中/EN</a></li>
+                        </ul>
+                    </div>
+                    <div class="color-gray" id="booking-ticket">
+                        <a class="color-text-white" href="booking-tickets.html" target="_blank">
+                            <span><img src="../resource/ticket_icon.png" alt="ticket"></span>购买门票</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="grid-wrapper grid-space">
-        <div class="grid">
-            <div class="grid-cell">
-                <div class="speakers-abstract">
-                    <div class="words">
-                        <p class="word">
-                            随着微服务架构的普及，组织关注的问题不再是是否选择微服务，而是如何发挥微服务架构本真的价值，
-                            在基于DDD精心设计以业务为中心的微服务架构后，我们将带您引用更多实践，包括：云平台部署，容器化，DevOps, CI/CD等，
-                            它们将与微服务架构融合协作，以真正达到提升业务响应力的目的，这套完整的体系被称为Cloud Native。 
-                        </p>
-                        <p class="word">
-                            本工作坊将带您走进Cloud Native, 让您可以在Cloud Native的体系下，基于Service Mesh技术，
-                            撸起袖子写代码，亲历Cloud Native最真实的一面。同时也会涉及到Cloud Native应用在面对互联网
-                            应用典型的三高问题(高性能，高并发，高可用) 的讨论，让您可以通过这个工作坊体验Cloud Native下微服务实践升级打怪的乐趣，
-                            助力您的微服务应用插上高响应力的翅膀。
-                        </p>
-                    </div>
+    <div id="fixed-subscribe">
+        <div id="fixed-subscribe-button">
+            <img src="../resource/icon/subscribe.png" alt="subscribe">
+            <span>订 阅</span>
+        </div>
+
+        <div id="fixed-subscribe-window">
+            <div class="over-layer"></div>
+            <div class="subscribe-form">
+                <iframe id="goldendata_form_hvS3ze"
+                    src="https://jinshuju.net/f/hvS3ze?background=white&banner=show&embedded=true" width="320" frameborder=0
+                    allowTransparency="true" height="665"></iframe>
+                <div class="close-button">
+                    <img src="../resource/icon/close.png" alt="close">
                 </div>
             </div>
         </div>
-    </div> 
+        <link rel="stylesheet" href="../css/fixed-subscribe.css">
+        <script src="../js/fixed-subscribe.js"></script>
+    </div>
 
-    <div class="grid-wrapper grid-space grid-grey">
-        <div class="grid">
-            <div class="grid-cell">
-                <div class="speakers-abstract">
-                    <p class="title centered">工作坊具体运作方式</p>
-                    <div class="words">
-                        <p class="word">
-                            工作坊将分成6-7个小组，每组负责一个服务，每个小组将面对不同的编程挑战(包括：DDD战术模型落地，
-                            微服务独立上线，微服务自愈，高可用...)。分成两阶段完成编程任务，所有小组的微服务都完成后
-                            将show case一个完整的业务场景。
-                        </p>
-                        <p>
-                            Workshop实践过程涉及到的相关技术，模式与方法论：</br>
-                            Kubernetes, Istio, Docker, Java 11, PACT, Pipeline as Code, PACT...
-                        </p>
-                    </div>
-                </div>
+    <div class="main-container">
+        <div class="grid-wrapper">
+            <div class="hero-banner">
+                <a href="./booking-tickets.html">
+                    <img src="../resource/workshop3.png" alt="Topic pic">
+                </a>
             </div>
         </div>
-    </div> 
 
-    <div class="grid-wrapper grid-space">
-        <div class="grid">
-            <p class="centered title">日程安排</p>
-            <div class="flexbox-row schedule">
-                <ul class="workshop-schedule">
-                    <li>09:00 - 09:30</li>
-                    <li>09:30 - 10:00</li>
-                    <li>10:00 - 11:30</li>
-                    <li>11:30 - 12:00</li>
-                    <li>12:00 - 13:30</li>
-                    <li>13:30 - 14:00</li>
-                    <li>14:00 - 16:00</li>
-                    <li>16:00 - 16:30</li>
-                    <li>16:30 - 17:30</li>
-                </ul>
-                <ul class="workshop-schedule content">
-                    <li>暖场</li>
-                    <li>案例介绍</li>
-                    <li>实践热身，每组的第一个功能发布上云</li>
-                    <li>Retro & Code Review</li>
-                    <li>午休</li>
-                    <li>User Story介绍</li>
-                    <li>完整业务场景的User Story实现</li>
-                    <li>Show case</li>
-                    <li>总结与实现方法论介绍</li>
-                </ul>
-            </div>
-            <div class="grid-cell centered">
-                <a class="button button-dark mv-1" href="./booking-tickets.html">一键购票</a>
-            </div>
-        </div>
-    </div> 
-
-    <div class="grid-wrapper grid-space grid-grey">
+        <div class="grid-wrapper grid-space  work-bg">
             <div class="grid centered">
                 <div class="grid-cell">
                     <div class="speakers-abstract">
-                        <p class="title">注意事项</p>
+                        <p class="title">工作坊介绍</p>
                         <div class="words">
                             <p class="word">
-                                每组会配有一位教练，教练会为每组提供完整工作的环境。
-                                开发人员建议使用内核3.1以上的Linux, 预先安装好Docker。
+                                在数字经济的带动下各行业面临数字化转型，企业的IT系统由原来的支撑业务发展转变来引领企业的发展，从而在数字化时代企业架构也需要新的设计思路；平台化、共享化、服务化等诉求已成为企业架构新的方向；而在服务化的过程中如果进行微服务的拆分？微服务拆分的依据是什么？有没有什么方法或优秀实践参考？如何保障微服务的正确落地？是困扰很多企业的问题。
+                                </br>
+                                本次工作坊将采用您用领域驱动设计方法、Event Storming实践带领您对某个沙盘业务场景亲自进行微服务的划分，解答您在微服务划分中的困惑；并带领您体验微服务划分到开发、部署的过程。
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-    </div> 
+        </div>
 
-    <div class="grid-wrapper grid-space">
-        <div class="grid-cell speaker-info rect text-left">
-            <p class="centered title">讲师简介</p>
-            <div class="flexbox-row">
-                <div class="speaker-img speaker-intro-row workshop-3">
-                    <div>
-                        <img src="../resource/workshop-3/workshop-3-huangliang.jpg" alt="">
+        <!-- <div class="grid-wrapper grid-space grid-grey">
+            <div class="grid-cell speaker-info text-left">
+                <p class="centered title">工作坊环节</p>
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div class="workshop-schedule-item workshop-schedule-title-1">
+                            <p class="workshop-schedule-title">复杂系统</p>
+                        </div>
+                    </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">
+                            <p>通过深入分析软件系统的复杂度成因与本质，探索领域驱动设计对软件复杂度的应对：</p>
+                            <ul>
+                                <li>
+                                    复杂的本质：从理解力与预测能力两个因素得到影响软件复杂度的因素为规模、结构
+                                    与变化
+                                </li>
+                                <li>
+                                    控制软件复杂度的原则：通过分而治之控制规模，通过整洁架构保证结构的清晰，通
+                                    过抽象与封装应对变化，保证架构的可进化性、可扩展性与可定制性
+                                    领
+                                </li>
+                                <li>
+                                    域驱动设计对复杂的应对：分层架构隔离业务复杂度与技术复杂度，限界上下文的
+                                    分而治之，领域模型对领域知识的抽象
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="speaker-detail speaker-intro-row">
-                    <div class="speaker-detail-information words">
-                        <p class="word" style="font-style: italic; font-weight: bold; font-size: 32px">黄亮</p>
-                        <p class="word">
-                            ThoughtWorks资深咨询师。
-                        </p>
-                        <p class="word">
-                            近十五年开发与架构经验，微服务架构与领域驱动设计的实践推动者，热爱技术，喜欢Coding。
-                            专注于分布式系统架构设计，架构重构与疑难问题解决，为不同领域的客户提供专业的架构设计与技术改进
-                            咨询服务，尤其擅长于JAVA技术栈与微服务架构。
-                        </p>
+
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div class="workshop-schedule-item workshop-schedule-title-2">
+                            <p class="workshop-schedule-title">领域知识</p>
+                        </div>
+                    </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">
+                            <p>结合敏捷管理思想与实践探讨如何提炼领域知识：</p>
+                            <ul>
+                                <li>
+                                    Inception：运用Inception浮现领域问题域，建立良好沟通机制分析需求，提炼领域知
+                                    识
+                                </li>
+                                <li>
+                                    敏捷开发：探讨迭代生命周期与用户故事生命周期的关键节点，保证团队沟通与交流
+                                    领域场景分析：提出领域场景分析的6W模型，并结合用例、用户故事等手段浮现业
+                                    务场景
+                                </li>
+                                <li>
+                                    统一语言：从领域术语和领域行为引导团队获得统一语言
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div class="workshop-schedule-item workshop-schedule-title-3">
+                            <p class="workshop-schedule-title">界限上下文</p>
+                        </div>
+                    </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">
+                            <p>
+                                深入分析限界上下文的本质，并引入完整过程来识别限界上下文：
+                            </p>
+                            <ul>
+                                <li>边界：分析限界上下文的业务边界、工作边界和应用边界</li>
+                                <li>过程：一个可行的完整过程帮助我们分析需求，甄别风险，识别限界上下文</li>
+                                <li>上下文映射：剖析上下文映射的模式，学会正确地辨别限界上下文的协作关系</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div class="workshop-schedule-item workshop-schedule-title-4">
+                            <p class="workshop-schedule-title">战略架构</p>
+                        </div>
+                    </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">
+                            <p>
+                                借鉴经典架构理论，开拓领域驱动架构设计的视野，引入最新的架构风格：
+                            </p>
+                            <ul>
+                                <li>
+                                    分层架构：从本源开始剖析分层架构的今世前生
+                                </li>
+                                <li>
+                                    架构演进：为分层架构引入整洁架构、六边形架构与微服务架构，探索架构演进的脉
+                                    络
+                                </li>
+                                <li>
+                                    限界上下文与架构：限界上下文的通信边界对架构产生的影响，推荐领域驱动设计的
+                                    代码结构
+                                </li>
+                                <li>
+                                    事件驱动：改变建模思想，以事件为驱动力，谈谈以事件为核心的架构模式
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-cell centered">
+                    <a class="button button-dark mv-1" href="./booking-tickets.html">一键购票</a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="grid-wrapper grid-space">
+            <div class="grid centered">
+                <div class="grid-cell">
+                    <div class="speakers-abstract">
+                        <p class="title">参与收益</p>
+                        <div class="words" style="text-align: left">
+                            <p class="word">
+                                您将学习到如何使用领域驱动设计（DDD）把业务需求演变成企业级服务化架构设计，再到服务化开发落地优秀实践，并亲自体验完整的领域驱动设计（DDD）过程。让你掌握一套优秀的企业架构设计方法，帮助你在瞬息万变的数字时代有一张可以乘风破浪的航海图。
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flexbox-row">
-                <div class="speaker-img speaker-intro-row workshop-3">
-                    <div>
-                        <img src="../resource/workshop-3/workshop-3-wangwei.jpg" alt="">
+        </div>
+
+        <div class="grid-wrapper grid-space grid-grey">
+            <div class="grid-cell speaker-info text-left">
+                <p class="centered title">讲师简介</p>
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div>
+                            <img src="../resource/speakers/hejian.png" alt="">
+                        </div>
+                    </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">和坚 ThoughtWorks
+                            高级咨询师，前互联网金融公司CTO，十多年IT从业经验，从技术到金融，从金融到风控，从风控到互联网，从互联网到咨询。不断走出舒适区，体验多维的人生。 </div>
                     </div>
                 </div>
-                <div class="speaker-detail speaker-intro-row">
-                    <div class="speaker-detail-information words">
-                        <p class="word" style="font-style: italic; font-weight: bold; font-size: 32px">王威</p>
-                        <p class="word">
-                            ThoughtWorks资深咨询顾问。
-                        </p>
-                        <p class="word">
-                            王威曾先后为国内外金融、电信、能源、汽车、航运物流等行业的全球领军企业提供数字化转型、平台化建设咨询、
-                            响应式架构设计咨询、大型遗留系统重构规划、产品级敏捷咨询等服务。王威作为领域驱动设计（DDD）的实践者，
-                            是国内最早的事件风暴（Event Storming）的实践者和倡导者，也是最早为国内企业提供领域驱动设计相关咨询服务的咨询师。
-                            2017年，王威以联合创始人的身份参与创建了领域驱动设计社区，持续在向国内技术社区推广DDD的实践。
-                        </p>
+                <div class="flexbox-row">
+                    <div class="speaker-img speaker-intro-row">
+                        <div>
+                            <img src="../resource/speakers/wuronghua.png" alt="">
+                        </div>
                     </div>
+                    <div class="speaker-detail speaker-intro-row">
+                        <div class="speaker-detail-information">吴荣华 ThoughtWorks 高级咨询师，
+                            十五年以上计算机软件行业经验，多年的软件项目管理、咨询顾问经验，曾主持过多个大中型软件项目（含大型企业项目、政府项目）的建设。为多家大型企业提供为敏捷、微服务改造等咨询服务。
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-cell centered">
+                    <a class="button button-dark mv-1" href="./booking-tickets.html">一键购票</a>
                 </div>
             </div>
+        </div>
+
+        <div class="grid-wrapper footer-additional color-black color-text-white">
+            <div class="grid-cell content-container" id="contact-us">
+                <p class="sub-title">联系我们</p>
+                <div class="words">
+                    <p class="in-paragraph-word">购票热线</p>
+                    <p class="in-paragraph-word">议题提交：speakers@ddd-china.com</p>
+                    <p class="in-paragraph-word">合作咨询：info@ddd-china.com</p>
+                    <p class="in-paragraph-word">购票咨询：tickets@ddd-china.com</p>
+                </div>
+            </div>
+
             <div class="grid-cell centered">
-                <a class="button button-dark mv-1" href="./booking-tickets.html">一键购票</a>
+                <div class="words">
+                    <p class="word word-small color-text-white">&copy; DDD-China版权所有 <a class="rights-reversed" href="http://www.miitbeian.gov.cn">陕ICP备13005347号-5</a></p>
+
+                </div>
             </div>
         </div>
+
     </div>
-
-    <div class="grid-wrapper footer-additional color-black color-text-white">
-        <div class="grid-cell content-container" id="contact-us">
-            <p class="sub-title">联系我们</p>
-            <div class="words">
-                <p class="in-paragraph-word">购票热线</p>
-                <p class="in-paragraph-word">议题提交：speakers@ddd-china.com</p>
-                <p class="in-paragraph-word">合作咨询：info@ddd-china.com</p>
-                <p class="in-paragraph-word">购票咨询：tickets@ddd-china.com</p>
-            </div>
-        </div>
-
-        <div class="grid-cell centered">
-            <div class="words">
-                <p class="word word-small color-text-white">&copy; DDD-China版权所有 <a class="rights-reversed" href="http://www.miitbeian.gov.cn">陕ICP备13005347号-5</a></p>
-
-            </div>
-        </div>
-    </div>
-
-</div>
 </body>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    focusOn(NAV_ITEMS.WORKSHOP, LANGUAGE.EN);
-  })
+    $(document).ready(function () {
+        focusOn(NAV_ITEMS.WORKSHOP, LANGUAGE.EN);
+    })
 </script>
+
 </html>
-
-
-
