@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
     <link rel="icon" href="../resource/favicon.ico">
-    <style>
-        img.entry {
-            width: 100%;
-            vertical-align: middle;
-        }
-    </style>
 </head>
 
 <body>
@@ -72,28 +66,67 @@
         <link rel="stylesheet" href="../css/fixed-subscribe.css">
         <script src="../js/fixed-subscribe.js"></script>
     </div>
+
     <div class="main-container">
-        <div class="grid-wrapper">
-            <a href="./workshop-1.html">
-                <img class="entry" src="../resource/workshop-entry-1.png" alt="领域场景驱动设计实战工作坊" />
-            </a>
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">Content Adviser</p>
         </div>
-        <div class="grid-wrapper">
-            <a href="./workshop-2.html">
-                <img class="entry" src="../resource/workshop-entry-2.png" alt="实战化领域驱动设计工作坊" />
-            </a>
-        </div>
-        <div class="grid-wrapper">
-            <a href="./workshop-3.html">
-                <img class="entry" src="../resource/workshop-entry-3.jpg" alt="实战化领域驱动设计工作坊" />
-            </a>
+
+        <div id="producer-list"></div>
+        <div class="grid-wrapper footer-additional color-black color-text-white">
+            <div class="grid-cell content-container" id="contact-us">
+                <p class="sub-title">CONTACT US</p>
+                <div class="words">
+                    <p class="in-paragraph-word">Ticket Hotline</p>
+                    <p class="in-paragraph-word">Topic Submission：speakers@ddd-china.com</p>
+                    <p class="in-paragraph-word">Collaboration Inquiry：info@ddd-china.com</p>
+                    <p class="in-paragraph-word">Ticket Inquiry：tickets@ddd-china.com</p>
+                </div>
+            </div>
+
+            <div class="grid-cell centered">
+                <div class="words">
+                    <p class="word word-small color-text-white">&copy; DDD-China. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../data/producer-content-en.js"></script>
+<script type="text/javascript" src="../js/producer.js"></script>
+<script id="producer-speaker-container" type="text/html">
+    <div class="grid-cell speaker-info text-left">
+        <div class="flexbox-row">
+            <div class="speaker-img speaker-intro-row">
+                <div>
+                    <img src='${imgUrl}' alt="${name}">
+                </div>
+            </div>
+            <div class="speaker-detail speaker-intro-row">
+                <div class="speaker-detail-introduction">
+                    <div class="speaker-name">${name}</div>
+                    <div class="speaker-title">${introduction}</div>
+                </div>
+                <div class="speaker-detail-information">${information}</div>
+            </div>
+        </div>
+
+        <div class="flexbox-row">
+            <div class="speaker-topic speaker-intro-row">
+                <div class="speaker-topic-title">TOPIC</div>
+                <div class="speaker-topic-content">${topic}</div>
+            </div>
+            <div class="speaker-topic-detail flexbox-item grid-grey">
+                <div class="speaker-topic-content-detail">{{html topicInformation}}</div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        focusOn(NAV_ITEMS.WORKSHOP, LANGUAGE.ZH);
+        focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.ZH);
     })
 </script>
 
